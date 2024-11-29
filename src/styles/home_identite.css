@@ -1,0 +1,117 @@
+.ficheIdentite {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row; /* Aligne les éléments horizontalement */
+    justify-content: space-between; /* Place les enfants aux extrémités */
+    align-items: flex-start; /* Aligne les enfants en haut */
+    padding: 20px; /* Ajoute de l'espacement interne */
+    box-sizing: border-box;
+}
+
+.identiteText {
+    align-self: flex-start; /* Garde le texte en haut à gauche */
+    height: 600px;
+    width: auto;
+}
+
+.boitePhotoHev {
+    display: flex;
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: center; /* Aligne les éléments à droite */
+    gap: 20px; /* Ajoute un espace entre les éléments */
+    height: auto; /* Ajuste à la hauteur de son contenu */
+}
+
+.photoHev {
+    height: 900px;
+    width: auto;
+}
+
+.identiteHev {
+    margin-top: 100px;
+    height: 100px;
+    width: auto;
+}
+
+.idBoiteText {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: space-between; 
+    margin-top: 40px;
+    height: 100%; 
+}
+
+
+.identiteBack{
+    margin-bottom: 60px;
+    height: 50px;
+}
+
+.python{
+    color: white;
+}
+
+@media screen and (max-width: 1920px) and (max-height: 1080px) {
+    .ficheIdentite {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%; /* Réduit de 30% */
+        height: 100%; /* Réduit de 30% */
+        display: flex;
+        flex-direction: row; /* Aligne les éléments horizontalement */
+        justify-content: space-between; /* Place les enfants aux extrémités */
+        align-items: flex-start; /* Aligne les enfants en haut */
+        padding: 14px; /* Réduit de 30% */
+        box-sizing: border-box;
+    }
+
+    .identiteText {
+        align-self: flex-start; /* Garde le texte en haut à gauche */
+        height: 420px; /* Réduit de 30% */
+        width: auto;
+    }
+
+    .boitePhotoHev {
+        display: flex;
+        flex-direction: column; /* Empile les éléments verticalement */
+        align-items: center; /* Aligne les éléments à droite */
+        gap: 14px; /* Réduit de 30% */
+        height: auto; /* Ajuste à la hauteur de son contenu */
+    }
+
+    .photoHev {
+        height: 700px; /* Réduit de 30% */
+        width: auto;
+    }
+
+    .identiteHev {
+        margin-top: 70px; /* Réduit de 30% */
+        height: 70px; /* Réduit de 30% */
+        width: auto;
+    }
+
+    .idBoiteText {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 28px; /* Réduit de 30% */
+        height: 100%; /* Réduit de 30% */
+    }
+
+    .identiteBack {
+        margin-bottom: 55px; /* Réduit de 30% */
+        height: 35px; /* Réduit de 30% */
+    }
+
+    .python {
+        color: white;
+        font-size: 70%; /* Réduction de la taille de police */
+    }
+}
