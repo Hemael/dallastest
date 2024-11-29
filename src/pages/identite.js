@@ -4,12 +4,17 @@ import cartei from "../data/SVG/cartei.svg";
 import carteIdHeva from "../data/SVG/carteIdHeva.svg";
 import carteIdtext from "../data/SVG/carteIdText.svg";
 import carteIdBack from "../data/SVG/carteIdBack.svg";
+import idCadre from "../data/SVG/cadre.svg";
 
 function HomeIdentite() {
     return (
         <>
             <div className="background">
                 <div className="background-image"></div>
+            </div>
+
+            <div className="idCadre">
+            <img src={idCadre} alt="image-carte" className="idCadreR" />
             </div>
 
             <div className="ficheIdentite">
@@ -19,7 +24,7 @@ function HomeIdentite() {
                 <img src={carteIdtext} alt="image-carte" className="identiteText" />
 
                 <Link to="/home">
-                   <img src={carteIdBack} alt="image-carte" className="identiteBack" />
+                   <img src={carteIdBack} alt="image-carte" className="identiteBack shake" />
                 </Link>
 
                 </div>
