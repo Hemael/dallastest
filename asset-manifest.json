@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/dallastest/static/css/main.4b596b48.css",
-    "main.js": "/dallastest/static/js/main.638b3aa5.js",
+    "main.css": "/dallastest/static/css/main.537a05c9.css",
+    "main.js": "/dallastest/static/js/main.0dcd3bef.js",
     "static/media/cartei.svg": "/dallastest/static/media/cartei.092040a25d559858151c8517f12b0cc0.svg",
     "static/media/imgco.svg": "/dallastest/static/media/imgco.73b0d52b57176318928b22538d385371.svg",
     "static/media/HenelCo.svg": "/dallastest/static/media/HenelCo.095d01d97ff16b915139b3211b8a09c0.svg",
-    "static/media/carteIdtext.svg": "/dallastest/static/media/carteIdtext.72ec04115da4133fa817b0a697e26887.svg",
+    "static/media/carteIdText.svg": "/dallastest/static/media/carteIdText.72ec04115da4133fa817b0a697e26887.svg",
     "static/media/carteIdHeva.svg": "/dallastest/static/media/carteIdHeva.1b56a0ea7a73b82ce3b1302657fe225d.svg",
     "static/media/psycho.svg": "/dallastest/static/media/psycho.a5434a5fb8f20becc680c4e76e6bc679.svg",
     "static/media/carteIdBack.svg": "/dallastest/static/media/carteIdBack.3e4cb51815c25d2c7e8f9ff6f866f5f5.svg",
     "static/media/equipement.svg": "/dallastest/static/media/equipement.9829d2fc62286ebef762c1f15440d6a4.svg",
     "index.html": "/dallastest/index.html",
+    "static/media/cadre.svg": "/dallastest/static/media/cadre.aa84fdd607983136be6d826f98f03274.svg",
     "static/media/verrou.svg": "/dallastest/static/media/verrou.d351da04b526761fb54a52ebafe20365.svg",
     "static/media/physique.svg": "/dallastest/static/media/physique.90a60f2f8717b451ff0048df397d19e0.svg",
     "static/media/disc.svg": "/dallastest/static/media/disc.1fcac7def0b40ea0ca2e9e37323e73e2.svg",
     "static/media/identite.svg": "/dallastest/static/media/identite.53b7b741850693dacfa1a92c7dc50ad1.svg",
     "static/media/plus.svg": "/dallastest/static/media/plus.e27764efe3e97790360410119d2a7f2a.svg",
-    "main.4b596b48.css.map": "/dallastest/static/css/main.4b596b48.css.map",
-    "main.638b3aa5.js.map": "/dallastest/static/js/main.638b3aa5.js.map"
+    "main.537a05c9.css.map": "/dallastest/static/css/main.537a05c9.css.map",
+    "main.0dcd3bef.js.map": "/dallastest/static/js/main.0dcd3bef.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b596b48.css",
-    "static/js/main.638b3aa5.js"
+    "static/css/main.537a05c9.css",
+    "static/js/main.0dcd3bef.js"
   ]
 }
