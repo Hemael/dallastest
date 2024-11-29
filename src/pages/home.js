@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"; // Import du composant Link
 import "../styles/home.css";
-import "../styles/typo.css";
 import "../styles/animation.css";
 import HenelCo from "../data/SVG/HenelCo.svg";
 import Equipement from "../data/SVG/equipement.svg";
@@ -14,7 +13,7 @@ function Home() {
     return (
         <>
             <div className="background">
-                <div className="background-imageh"></div>
+                <div className="background-image"></div>
             </div>
             <div className="center-carrer">
                 <div className="carrer"></div>

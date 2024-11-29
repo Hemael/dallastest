@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "../styles/archives.css";
-import "../styles/typo.css";
 import HenelCo from "../data/SVG/HenelCo.svg";
 import disc from "../data/SVG/disc.svg";
 import boxesData from "../data/boxesData.json";

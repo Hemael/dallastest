@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import imgco from "../data/SVG/imgco.svg";
 import "../styles/connexion.css";
 import "../styles/typo.css";
+import "../styles/background.css";
 import AudioPlayer from "../components/audioPlayer.js"; // Import du composant AudioPlayer
 
 function Connexion() {

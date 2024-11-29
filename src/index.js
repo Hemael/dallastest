@@ -8,22 +8,18 @@ import Archives from './pages/archives';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Router basename="/dallastest">
+      <Routes>
+        <Route path="/" element={<Connexion />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/archives" element={<Archives />} />
 
-      <Router>
-        <Routes>
-          <Route path="/" element={<Connexion />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/archives" element={<Archives />} />
-
-          <Route path="/home/equipements" element={<Archives />} />
-          <Route path="/home/identite" element={<Archives />} />
-          <Route path="/home/autres" element={<Archives />} />
-          <Route path="/home/physchologique" element={<Archives />} />
-          <Route path="/home/apparence" element={<Archives />} />
-        </Routes>
-      </Router>
-
+        <Route path="/home/equipements" element={<Archives />} />
+        <Route path="/home/identite" element={<Archives />} />
+        <Route path="/home/autres" element={<Archives />} />
+        <Route path="/home/physchologique" element={<Archives />} />
+        <Route path="/home/apparence" element={<Archives />} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
-
-
