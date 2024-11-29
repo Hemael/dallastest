@@ -1,0 +1,248 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none; /* Pas de couleur de fond */
+    overflow: hidden; /* Empêche le défilement inutile */
+}
+
+.background {
+    position: fixed; /* Assure que l'arrière-plan occupe toute la fenêtre */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place l'arrière-plan derrière les autres éléments */
+}
+
+.background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.5); /* Couleur rouge semi-transparente */
+    mix-blend-mode: color; /* Change uniquement la teinte du GIF */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.pinimg.com/originals/84/53/be/8453bedc2350e1878e07bbb05cd13765.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.enTete {
+    font-family: "Audiowide", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #D1261E;
+    z-index: 1; /* Place le contenu au-dessus de l'arrière-plan */
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    transition: none; /* Désactive les transitions pour éviter les changements de taille */
+    flex-shrink: 0; /* Empêche le redimensionnement des enfants */
+}
+
+.pinInput {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 10px;
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    background-color: #a02121;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.error {
+    color: a02121;
+    margin-top: 10px;
+    font-size: 12px;
+    max-width: 100%; /* Limite la taille de l'erreur */
+    text-align: center; /* Centre le texte */
+}
+
+
+.connexionButton {
+
+    display: none;
+
+}
+
+
+
+
+.audio-player {
+    position: fixed; /* Place le lecteur en position fixe */
+    top: 95%; /* Centre verticalement */
+    right: 10px; /* Distance depuis le bord droit */
+    transform: translateY(-50%); /* Centre précisément verticalement */
+    display: flex;
+    align-items: center;
+    color: #b84343;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    font-family: Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.8); /* Optionnel : ajoute un fond transparent */
+    
+}
+
+  
+button {
+    background-color: #a02121;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+
+input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+span {
+    display: none;
+    font-size: 14px;
+}
+
+.rangeInput {
+    -webkit-appearance: none; /* Supprime le style par défaut */
+    appearance: none;
+    width: 100%; /* Ajuste la largeur */
+    height: 8px; /* Hauteur de la barre */
+    background: linear-gradient(to right, #a02121, #000); /* Couleur de la barre */
+    border-radius: 5px; /* Arrondi */
+    outline: none; /* Supprime le contour */
+    cursor: pointer; /* Change le curseur au survol */
+}
+
+.rangeInput::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Supprime le style par défaut */
+    appearance: none;
+    width: 16px; /* Taille du point */
+    height: 16px; /* Taille du point */
+    background: #1DB954; /* Couleur du point */
+    border: 2px solid #fff; /* Bord blanc pour contraste */
+    border-radius: 50%; /* Arrondi pour un point circulaire */
+    cursor: pointer; /* Change le curseur au survol */
+}
+
+
+
+
+/* Style pour Firefox */
+.rangeInput::-moz-range-track {
+    background: linear-gradient(to right, #a02121, #000);;
+    height: 8px;
+    border-radius: 5px;
+}
+  
+.rangeInput::-moz-range-thumb {
+width: 16px;
+height: 16px;
+background: #642222;
+border: 2px solid #fff;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.player{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.volume-control {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.volume-icon {
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.volume-bar-container {
+    position: absolute;
+    top: -120px; /* Ajuste la position verticale */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    padding: 5px;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Animation pour un effet fluide */
+}
+
+.volume-control:hover .volume-bar-container {
+    visibility: visible;
+    opacity: 1;
+}
+
+.volume-bar {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type="range"].volume-bar {
+    width: 4px; /* Largeur fine de la barre */
+    height: 100px; /* Hauteur de la barre verticale */
+    background: linear-gradient(to top, #7c0a0a, #000000); /* Dégradé personnalisé */
+    border-radius: 10px; /* Bord arrondi */
+    outline: none;
+    cursor: pointer;
+}
+
+/* Style du curseur */
+input[type="range"].volume-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px; /* Taille du curseur */
+    height: 12px;
+    background: #ff0000; /* Couleur du curseur */
+    border-radius: 50%; /* Arrondi complet */
+    border: 2px solid white; /* Bordure blanche */
+    cursor: pointer;
+}
+
+input[type="range"].volume-bar::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    background: #ff0000;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+}

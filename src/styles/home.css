@@ -1,0 +1,113 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    overflow: hidden;
+    font-family: "Audiowide", sans-serif;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.5);
+    mix-blend-mode: color;
+}
+
+.background-imageh {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.pinimg.com/originals/84/53/be/8453bedc2350e1878e07bbb05cd13765.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.henelh {
+    height: auto;
+    width: 500px;
+    margin-bottom: -100px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    padding: 20px 0;
+    position: relative;
+}
+
+.picto {
+    height: auto;
+    width: 100px;
+    margin: 30px;
+}
+
+.idPict {
+    margin-top: -300px;
+}
+
+.plusPict {
+    margin-top: -300px;
+}
+
+.equiPict {
+    margin-top: -100px;
+}
+
+.psychoPict {
+    margin-top: -100px;
+}
+
+.center-carrer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 900px;
+    height: 900px;
+    background-color: rgb(4, 4, 4);
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: 0;
+}
+
+
+.center{
+    margin-bottom: -200px;
+}
+
+.verrou{
+
+}
+
+.verrou {
+    position: absolute; /* Permet de placer l'élément par rapport à l'écran */
+    top: 20px; /* Espace depuis le haut */
+    right: 20px; /* Espace depuis la droite */
+    width: 50px; /* Taille personnalisée, ajustez si nécessaire */
+    height: auto; /* Conserve les proportions de l'image */
+    z-index: 10; /* Place l'élément au-dessus des autres contenus si nécessaire */
+    width: 30px;
+    cursor: pointer; /* Ajoute un curseur pointer pour indiquer une action */
+}

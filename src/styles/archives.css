@@ -1,0 +1,101 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none; /* Pas de couleur de fond */
+    overflow: hidden; /* Empêche le défilement inutile */
+    font-family: "Audiowide", sans-serif;
+}
+
+.background {
+    position: fixed; /* Assure que l'arrière-plan occupe toute la fenêtre */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place l'arrière-plan derrière les autres éléments */
+}
+
+.background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.5); /* Couleur rouge semi-transparente */
+    mix-blend-mode: color; /* Change uniquement la teinte du GIF */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.pinimg.com/originals/84/53/be/8453bedc2350e1878e07bbb05cd13765.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* S'assure que le conteneur occupe toute la hauteur */
+    width: 100%; /* S'assure que le conteneur occupe toute la largeur */
+    position: relative; /* Nécessaire pour les enfants positionnés */
+    z-index: 1; /* Place l'image au-dessus de l'arrière-plan */
+}
+
+.henel {
+    height: auto; /* Maintient le ratio de l'image */
+    max-width: 500px; /* Définit une largeur maximale */
+    display: block; /* Supprime tout comportement inline par défaut de l'image */
+}
+
+.disc{
+    height: 40px;
+}
+.home {
+    display: flex; /* Permet de positionner les éléments côte à côte */
+    flex-wrap: wrap; /* Les éléments passeront à la ligne si l'espace est insuffisant */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 20px; /* Espacement entre les éléments */
+    padding: 20px; /* Optionnel : espacement intérieur */
+    background-color: rgba(0, 0, 0, 0.829);
+}
+
+.boiteHome {
+    flex: 1 1 300px; 
+    max-width: 800px; 
+    margin : 20px; 
+    box-sizing: border-box; 
+}
+
+.boite{
+    display: flex;
+    align-items: center;
+    background-color: #a02121;
+    color: white;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    height: 80px;
+    width: 800px;
+    font-size: 35px;
+}
+
+.textBoite{
+    width: 800px;
+    padding: 20px;
+    padding-top: 40px;
+    margin-top: -20px;
+    background-color: #a021215d;
+    color: white;
+    border-radius: 20px;
+}
