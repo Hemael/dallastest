@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dallastest/static/css/main.33bde0ef.css",
+    "main.css": "/dallastest/static/css/main.5e998310.css",
     "main.js": "/dallastest/static/js/main.25c41da2.js",
     "static/media/imgco.svg": "/dallastest/static/media/imgco.73b0d52b57176318928b22538d385371.svg",
     "static/media/HenelCo.svg": "/dallastest/static/media/HenelCo.095d01d97ff16b915139b3211b8a09c0.svg",
@@ -12,11 +12,11 @@
     "static/media/disc.svg": "/dallastest/static/media/disc.1fcac7def0b40ea0ca2e9e37323e73e2.svg",
     "static/media/identite.svg": "/dallastest/static/media/identite.53b7b741850693dacfa1a92c7dc50ad1.svg",
     "static/media/plus.svg": "/dallastest/static/media/plus.e27764efe3e97790360410119d2a7f2a.svg",
-    "main.33bde0ef.css.map": "/dallastest/static/css/main.33bde0ef.css.map",
+    "main.5e998310.css.map": "/dallastest/static/css/main.5e998310.css.map",
     "main.25c41da2.js.map": "/dallastest/static/js/main.25c41da2.js.map"
   },
   "entrypoints": [
-    "static/css/main.33bde0ef.css",
+    "static/css/main.5e998310.css",
     "static/js/main.25c41da2.js"
   ]
 }
