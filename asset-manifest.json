@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/dallastest/static/css/main.9d2407af.css",
+    "main.js": "/dallastest/static/js/main.7da079d8.js",
+    "static/media/imgco.svg": "/dallastest/static/media/imgco.73b0d52b57176318928b22538d385371.svg",
+    "static/media/HenelCo.svg": "/dallastest/static/media/HenelCo.095d01d97ff16b915139b3211b8a09c0.svg",
+    "static/media/psycho.svg": "/dallastest/static/media/psycho.a5434a5fb8f20becc680c4e76e6bc679.svg",
+    "static/media/equipement.svg": "/dallastest/static/media/equipement.9829d2fc62286ebef762c1f15440d6a4.svg",
+    "index.html": "/dallastest/index.html",
+    "static/media/verrou.svg": "/dallastest/static/media/verrou.d351da04b526761fb54a52ebafe20365.svg",
+    "static/media/physique.svg": "/dallastest/static/media/physique.90a60f2f8717b451ff0048df397d19e0.svg",
+    "static/media/disc.svg": "/dallastest/static/media/disc.1fcac7def0b40ea0ca2e9e37323e73e2.svg",
+    "static/media/identite.svg": "/dallastest/static/media/identite.53b7b741850693dacfa1a92c7dc50ad1.svg",
+    "static/media/plus.svg": "/dallastest/static/media/plus.e27764efe3e97790360410119d2a7f2a.svg",
+    "main.9d2407af.css.map": "/dallastest/static/css/main.9d2407af.css.map",
+    "main.7da079d8.js.map": "/dallastest/static/js/main.7da079d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d2407af.css",
+    "static/js/main.7da079d8.js"
+  ]
+}
