@@ -31,15 +31,19 @@
 }
 
 
-html, body {
-    height: 100%;
+/* Centrage spécifique pour le body de la page Home */
+body.center-body {
+    height: 100vh; /* Force la hauteur à la taille de la fenêtre */
     margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: none;
-    font-family: "Audiowide", sans-serif;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    overflow: hidden; /* Empêche le défilement */
+    background: #000; /* Arrière-plan de la page Home, à ajuster si nécessaire */
 }
+
+
+
 
 .psychoR{
     height: 100px;

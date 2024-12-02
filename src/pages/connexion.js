@@ -25,7 +25,7 @@ function Connexion() {
     };
 
     return (
-        <>
+        <div className="bobo">
             <div className="background">
                 <div className="background-image"></div>
             </div>
@@ -49,7 +49,7 @@ function Connexion() {
                 </div>
             </div>
             <AudioPlayer /> {/* Ajout du lecteur audio */}
-        </>
+        </div>
     );
 }
 
