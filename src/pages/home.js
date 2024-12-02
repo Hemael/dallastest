@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"; // Import du composant Link
 import "../styles/home.css";
-import "../styles/animation.css";
 import HenelCo from "../data/SVG/HenelCo.svg";
 import Equipement from "../data/SVG/equipement.svg";
 import Identite from "../data/SVG/identite.svg";

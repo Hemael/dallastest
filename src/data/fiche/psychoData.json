@@ -1,0 +1,69 @@
+{
+  "psychologie": {
+    "caractere": "Hiva possède un caractère changeant et complexe. Elle peut être douce et agréable, mais aussi excentrique et manipulatrice. Elle est sensible sur certains sujets et cherche constamment un peu de liberté pour éviter de sombrer dans la monotonie. Malgré son tempérament capricieux, elle reste une personne douce et calme dans ses meilleurs moments.",
+    "faiblessesMentales": "Elle déteste être enfermée dans des espaces sombres et étroits. Bien qu’elle résiste aux tortures psychologiques, certaines techniques peuvent la fragiliser mentalement.",
+    "santeMentale": "Elle est stable malgré ses excentricités.",
+    "orientationSexuelle": "Elle apprécie les hommes.",
+    "loisirsEtGouts": [
+      "Adore les sucreries, le chocolat, le bubble tea et le thé.",
+      "Apprécie la compagnie le soir, sans forcément chercher de relations romantiques.",
+      "Passe-temps : jeux vidéo, musique (piano, violon, flûte) et travail informatique.",
+      "Déteste : le maïs, le chou, être poursuivie ou embêtée inutilement.",
+      "Bien qu’elle n’apprécie pas le café, elle en consomme parfois pour éviter de s’endormir.",
+      "Déteste particulièrement les tricheurs et aime leur donner une leçon dans les jeux."
+    ]
+  },
+
+
+  "equipement": {
+    "armes": [
+      "Un sniper gravé d’un motif doré et blanc représentant un serpent menaçant, surnommé 'marque d’Hiva', connu dans certains milieux et associé à son identité.",
+      "Des couteaux.",
+      "Un ordinateur portable et un téléphone, outils qu’elle transforme en armes redoutables grâce à ses compétences."
+    ],
+    "gadgets": [
+      "Une montre connectée.",
+      "Divers gadgets tels que des lunettes connectées en fonction de ses missions."
+    ],
+    "ameliorationsCybernetiques": {
+      "description": "Son principal implant lui permet d’enregistrer visuellement ce qu’elle voit. Lorsqu’il est activé, ses yeux prennent une teinte dorée, lui offrant la capacité d’analyser facilement logiciels, sites web ou failles dans les systèmes.",
+      "limitation": "Cet implant est néanmoins inutile en combat."
+    }
+  },
+
+
+  "physique": {
+    "apparence": {
+      "taille": "1m63",
+      "poids": "59 kg",
+      "description": "Silhouette fine mais peu musclée, visage parsemé de taches de rousseur, yeux verts expressifs.",
+      "tatouage": "Tatouage sur le haut du dos représentant une tête de serpent enroulé dans une couronne, dissimulé sous une peau synthétique en mission."
+    },
+    "capacitesPhysiques": {
+      "agilite": "Elle est agile et souple, capable de passer inaperçue et de s’infiltrer dans des organisations.",
+      "limitation": "Elle n’a ni force dans les bras ni dans les jambes et ne maîtrise pas le combat au corps à corps."
+    },
+    "pointsFaibles": "Si ses yeux sont bandés ou si elle est plongée dans l’obscurité, son implant devient inutilisable, la rendant presque inefficace."
+  },
+
+  
+  "supplementaire": {
+    "histoirePersonnelle": "Hiva est née dans une famille riche et influente impliquée en politique. Après la mort prématurée de ses parents, elle fut placée en foyer en attente d’adoption. Adoptée par un homme riche, elle reçut une éducation stricte et polyvalente, incluant plusieurs langues (français, anglais, japonais, chinois, russe, langue des signes), elle apprit aussi la musique et les technologies. Grâce à son talent de mémorisation, elle a appris à maîtriser le tout bien rapidement. Plus tard, ses parents adoptifs moururent de manière suspecte, la laissant seule pour gérer les affaires familiales. Aujourd’hui, elle travaille comme barman occasionnelle et informaticienne, bien qu’elle n’ait pas besoin de ces revenus pour vivre.",
+    "forcesPrincipales": [
+      "Son implant lui permet de comprendre rapidement les systèmes qu’elle observe et de trouver des failles.",
+      "Elle excelle dans les missions nécessitant discrétion, infiltration et analyse rapide."
+    ],
+    "recapitulatifForcesEtFaiblesses": {
+      "forces": [
+        "Analyse rapide.",
+        "Infiltration.",
+        "Grande capacité d’apprentissage."
+      ],
+      "faiblesses": [
+        "Dépendance à la vue.",
+        "Faiblesse physique.",
+        "Vulnérabilité dans l’obscurité."
+      ]
+    }
+  }
+}

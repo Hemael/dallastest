@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom"; // Import du composant Link
-import "../styles/home_identite.css";
-import cartei from "../data/SVG/cartei.svg";
-import carteIdHeva from "../data/SVG/carteIdHeva.svg";
-import carteIdtext from "../data/SVG/carteIdText.svg";
-import carteIdBack from "../data/SVG/carteIdBack.svg";
-import idCadre from "../data/SVG/cadre.svg";
+import "../../styles/ficheCSS/home_identite.css";
+import cartei from "../../data/SVG/cartei.svg";
+import carteIdHeva from "../../data/SVG/carteIdHeva.svg";
+import carteIdtext from "../../data/SVG/carteIdText.svg";
+import carteIdBack from "../../data/SVG/carteIdBack.svg";
+import idCadre from "../../data/SVG/cadre.svg";
+
 
 function HomeIdentite() {
     return (
