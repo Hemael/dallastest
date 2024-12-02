@@ -1,3 +1,6 @@
+.bobo{
+    width: auto;
+}
 
 
 .enTete {
@@ -179,3 +182,22 @@ input[type="range"].volume-bar::-moz-range-thumb {
 .audio-player span{
     display: none;
 }
+
+@media screen and (max-width: 1536px) {
+    .pinInput {
+        width: 280px;
+        height: 36px;
+        font-size: 12px;
+    }
+
+    .audio-player {
+        width: 200px;
+        padding: 12px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
