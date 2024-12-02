@@ -1,37 +1,55 @@
-h2{
+/* Titre principal */
+h2 {
     color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.psycho-container{
-    color: white;
-}
-
-.pageContent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.henelPsy{
-    height: 500px;
-    width: auto;
-}
-
+/* Conteneur principal */
 .psycho-container {
     display: flex;
+    flex-wrap: wrap; /* Permet de passer sur plusieurs lignes si nécessaire */
     justify-content: center;
     align-items: center;
-    margin: auto;
+    width: 100%;
     max-width: 1400px;
+    margin: auto;
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.801);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
+    box-sizing: border-box;
 }
 
+/* Conteneur pour l'image */
+.containerImgPsy {
+    flex: 1 1 300px; /* Minimum de 300px, ajustable */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    min-height: 150px; /* Assure une hauteur minimale pour éviter l'effondrement */
+    box-sizing: border-box;
+}
+
+.containerImgPsy img {
+    max-width: 100%; /* Empêche l'image de déborder */
+    height: auto; /* Maintient les proportions */
+    display: block;
+}
+
+/* Conteneur pour le texte */
+.containerTextPsy {
+    flex: 2 1 500px; /* Texte occupe plus d'espace si disponible */
+    padding: 20px;
+    color: white;
+}
+
+/* Sections de texte */
 .psycho-section {
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .psycho-section h3 {
@@ -49,4 +67,125 @@ h2{
 .psycho-section ul {
     list-style-type: disc;
     margin-left: 20px;
+}
+
+/* Image de la page */
+.psychoR {
+    height: 100px;
+    width: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Bouton Retour */
+.back-button {
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #a52e2e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: #8b1e1e;
+}
+
+.back-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive - Tablettes et petits écrans */
+@media screen and (max-width: 1024px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .psycho-container {
+        flex-direction: column; /* Les enfants s'alignent verticalement */
+        padding: 15px;
+    }
+
+    .containerTextPsy {
+        flex: 1 1 auto; /* Texte prend toute la largeur disponible */
+        padding: 10px;
+    }
+
+    .containerImgPsy {
+        flex: 1 1 100%; /* Laisse l'image occuper toute la largeur disponible */
+        padding: 5px;
+        height: 400px;
+        width: 400px;
+    }
+
+    .containerImgPsy img {
+        max-height: 300px; /* Limite la hauteur pour les écrans moyens */
+    }
+
+    .psycho-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .psycho-section p, .psycho-section ul {
+        font-size: 0.95rem;
+    }
+
+    .back-button {
+        font-size: 0.95rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Responsive - Mobiles */
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .containerImgPsy img {
+        max-height: 250px; /* Réduit la taille de l'image */
+    }
+
+    .psycho-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .psycho-section p, .psycho-section ul {
+        font-size: 0.9rem;
+    }
+
+    .back-button {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
+
+/* Responsive - Très petits écrans */
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .containerImgPsy img {
+        max-height: 200px; /* Encore plus petit pour s'adapter */
+    }
+
+    .psycho-section h3 {
+        font-size: 1rem;
+    }
+
+    .psycho-section p, .psycho-section ul {
+        font-size: 0.85rem;
+    }
+
+    .back-button {
+        font-size: 0.85rem;
+        padding: 5px 10px;
+    }
 }
